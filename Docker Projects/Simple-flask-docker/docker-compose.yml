@@ -1,0 +1,9 @@
+services:
+  simple-flask-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: simple-flask-app
+    ports:
+      - "5000:5000"
+    command: ["python", "app.py"]
